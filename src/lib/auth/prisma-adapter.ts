@@ -10,7 +10,6 @@ export function PrismaAdapter(
 ): Adapter {
   return {
     async createUser(user) {
-      console.log('TEST ->', user)
       const { '@ignitecall:userId': userIdOnCookies } = parseCookies({ req })
 
       if (!userIdOnCookies) {
