@@ -6,11 +6,11 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { AxiosError } from 'axios'
+import { NextSeo } from 'next-seo'
 
 import { api } from '../../lib/axios'
 
 import { Container, Form, FormError, Header } from './styles'
-import { NextSeo } from 'next-seo'
 
 const registerFormSchema = z.object({
   username: z

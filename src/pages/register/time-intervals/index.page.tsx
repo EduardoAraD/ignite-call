@@ -11,6 +11,7 @@ import { Controller, useFieldArray, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { ArrowRight } from 'phosphor-react'
+import { NextSeo } from 'next-seo'
 
 import { api } from '../../../lib/axios'
 
@@ -26,7 +27,6 @@ import {
   IntervalItem,
   IntervalsContainer,
 } from './styles'
-import { NextSeo } from 'next-seo'
 
 const timeIntervalsFormSchema = z.object({
   intervals: z
